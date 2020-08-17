@@ -1,0 +1,158 @@
+.wrapper {
+    font-family: 'Montserrat', sans-serif;
+    width: 1200px;
+    margin: 50px auto;
+    background: #F6F6F6;
+    padding: 40px 100px;
+    box-sizing: border-box;
+
+    .wr_header {
+        font-family: Montserrat;
+        font-size: 32px;
+        line-height: 20px;
+        font-weight: 500;
+        color: #000000;
+    }
+
+    .wr_main {
+        margin-top: 30px;
+        flex-direction: column;
+    }
+
+    .wr_head {
+        display: flex;
+    }
+
+    @poligon: polygon(0 0%, 80% 0, 100% 100%, 0 100%);
+    @width: 100%;
+
+    .wr_head {
+        div {
+            width: 160px;
+            line-height: 4;
+            text-align: center;
+            border-top-left-radius: 10px;
+            clip-path: @poligon;
+            background: #EDEEEF;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        div:not(:first-child) {
+            margin-left: -30px;
+            clip-path: polygon(0% 0%, 80% 0, 100% 100%, 20% 100%);
+        }
+        div:hover {
+            cursor: pointer;
+        }
+    }
+
+    /* .wr_head>div:not(:first-child) {
+        margin-left: -30px;
+        clip-path: polygon(0% 0%, 80% 0, 100% 100%, 20% 100%);
+    }
+
+    .wr_head>div:hover {
+        cursor: pointer;
+    } */
+
+    .active {
+        background: #ffffff !important;
+        color: #0096da;
+        clip-path: @poligon !important;
+    }
+
+    .mix {
+        color: #3f3f3f;
+        background: white;
+        padding: 0 45px 45px 45px;
+        display: flex;
+    }
+
+    .wr_main_body {
+        .mix;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .wr_map_body {
+        .mix;
+        flex-direction: column;
+    }
+
+    .block {
+        width: 48%;
+        margin-top: 45px;
+    }
+
+    .wr_main_body input {
+        margin-top: 30px;
+        width: @width;
+        line-height: 3;
+        border: 1px solid #dadef0;
+        box-sizing: border-box;
+        padding-left: 20px;
+    }
+
+    .form_comment {
+        width: @width;
+    }
+
+    .form_comment textarea {
+        margin-top: 30px;
+        height: 110px;
+        width: 100%;
+        resize: none;
+    }
+
+    .form_button {
+        margin-top: 30px;
+        width: 200px;
+        line-height: 3;
+        text-align: center;
+        background-color: #0096da;
+        color: white;
+        border-radius: 28px;
+        margin-left: auto;
+        cursor: pointer;
+    }
+
+    .wr_map {
+        margin-top: 100px;
+    }
+
+    .map_block_radio {
+        width: @width;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .map_block_radio div {
+        margin-top: 30px;
+        display: flex;
+    }
+
+    .map_block_radio{
+        div {
+            input {
+                width: 20px;
+                height: 20px;
+                border: 1px solid #dadef0;
+            }
+            label {
+                margin-left: 15px;
+                font-weight: bold;
+                color: #000000;
+            }
+        }
+    }
+
+    .mapping {
+        margin-top: 30px;
+        width: @width;
+        height: 100px;
+        border: 1px solid black;
+    }
+
+    [name="rad"] {
+        cursor: pointer;
+    }
+}

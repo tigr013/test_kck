@@ -1,0 +1,9 @@
+@import '~normalize.css';
+@import 'montserrat.css';
+
+
+@media (max-width: 1200px) {
+    .wrapper {
+        width: 100vw;
+    }
+}

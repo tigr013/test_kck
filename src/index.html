@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="wr_header">Выберите способ доставки</div>
+        <div class="wr_main">
+            <div class="wr_main_head wr_head">
+                <div class="delivery active">
+                    Доставка
+                </div>
+                <div class="pickup">
+                    Самовывоз
+                </div>
+            </div>
+            <div class="wr_main_body">
+                <div class="form_name block">
+                    <div>ФИО</div>
+                    <input type="text" placeholder="Только кириллица" name="cyrillic">
+                </div>
+                <div class="form_number block">
+                    <div>Телефон</div>
+                    <input type="text" placeholder="+7 (___) ___-__-__" name="phone">
+                </div>
+                <div class="form_adress block">
+                    <div>Адрес доставки</div>
+                    <input type="text" placeholder="Город, улица, дом">
+                </div>
+                <div class="form_comment block">
+                    <div>Комментарий</div>
+                    <textarea type="text">
+                </div>
+                <div class="form_button">Отправить</div>       
+            </div>
+        </div>
+        <div class="wr_map">
+            <div class="wr_map_head wr_head">
+                <div class="delivery">
+                    Доставка
+                </div>
+                <div class="pickup active">
+                    Самовывоз
+                </div>
+            </div>
+            <div class="map_block">
+                <div class="wr_map_body">
+                    <div class="map_block_radio">
+                        <div><input type="radio" name="rad" id="r1" checked><label for="r1">Пункт Выдачи заказов Песчаная улица, дом 13</label></div>
+                        <div><input type="radio" name="rad" id="r2"><label for="r1">Пункт Выдачи заказов Подсосенский переулок, 11</label></div>
+                    </div>
+                    <div class="mapping">Карта</div>
+                    <div class="form_button">Отправить</div>       
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
